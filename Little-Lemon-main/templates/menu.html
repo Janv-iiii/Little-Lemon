@@ -1,0 +1,76 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section class="menu-hero" style="background-image: url('https://image.freepik.com/free-photo/mediterranean-food-plate_1203-1060.jpg');">
+  <div class="menu-hero-content">
+    <h1>Our Menu</h1>
+    <p>Experience the authentic taste of the Mediterranean.</p>
+  </div>
+</section>
+
+<section class="menu-categories">
+  <div class="menu-grid">
+    <article class="menu-category">
+      <h2>Appetizers</h2>
+      <img src="https://image.freepik.com/free-photo/hummus-with-pita-bread_1203-1061.jpg" alt="Appetizer Image">
+      <ul>
+        {% for item in menu.appetizers %}
+        <li>{{ item.name }} - ${{ item.price }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+    <article class="menu-category">
+      <h2>Main Courses</h2>
+      <img src="https://image.freepik.com/free-photo/grilled-salmon-with-vegetables_1203-1062.jpg" alt="Main Course Image">
+      <ul>
+        {% for item in menu.main_courses %}
+        <li>{{ item.name }} - ${{ item.price }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+    <article class="menu-category">
+      <h2>Desserts</h2>
+      <img src="https://image.freepik.com/free-photo/traditional-greek-baklava_1203-1063.jpg" alt="Dessert Image">
+      <ul>
+        {% for item in menu.desserts %}
+        <li>{{ item.name }} - ${{ item.price }}</li>
+        {% endfor %}
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="specials">
+  <h2>Specials of the Day</h2>
+  <div class="specials-grid">
+    <article class="special">
+      <img src="https://image.freepik.com/free-photo/chicken-shawarma_1203-1064.jpg" alt="Special Image">
+      <h3>Chicken Shawarma</h3>
+      <p>Juicy chicken shawarma served in a pita with tzatziki sauce and pickles.</p>
+      <span>$15.00</span>
+    </article>
+    <article class="special">
+      <img src="https://image.freepik.com/free-photo/grilled-lamb-chops_1203-1065.jpg" alt="Special Image">
+      <h3>Grilled Lamb Chops</h3>
+      <p>Tender lamb chops marinated in Mediterranean spices, grilled to perfection.</p>
+      <span>$25.00</span>
+    </article>
+    <article class="special">
+      <img src="https://image.freepik.com/free-photo/traditional-greek-galaktoboureko_1203-1066.jpg" alt="Special Image">
+      <h3>Galaktoboureko</h3>
+      <p>Semolina custard pie wrapped in flaky phyllo pastry, topped with a sweet syrup.</p>
+      <span>$8.00</span>
+    </article>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Our Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://image.freepik.com/free-photo/mediterranean-restaurant-interior_1203-1067.jpg" alt="Gallery 1">
+    <img src="https://image.freepik.com/free-photo/mediterranean-food-plate_1203-1068.jpg" alt="Gallery 2">
+    <img src="https://image.freepik.com/free-photo/mediterranean-restaurant-table-setting_1203-1069.jpg" alt="Gallery 3">
+    <img src="https://image.freepik.com/free-photo/mediterranean-restaurant-kitchen_1203-1070.jpg" alt="Gallery 4">
+    <img src="https://image.freepik.com/free-photo/mediterranean-restaurant-exterior_1203-1071.jpg" alt="Gallery 5">
+    <img src="https://image.freepik.com/free-photo/mediterranean-restaurant-dining-area_1203-1072.jpg" alt="Gallery 6">
+  </div>
+</section>
+{% endblock %}

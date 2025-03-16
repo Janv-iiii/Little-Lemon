@@ -1,0 +1,79 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<section class="splash" style="background-image: url('https://image.freepik.com/free-photo/empty-restaurant-interior-with-tables-chairs_1203-1069.jpg');">
+    <div class="splash-content">
+      <h1>Welcome to Little Lemon</h1>
+      <p>Experience the authentic taste of the Mediterranean.</p>
+      <a href="{% url 'book' %}" class="cta">Book Now</a>
+    </div>
+  
+</section>
+
+<section class="story">
+  <div class="story-grid">
+    <div class="story-image">
+      <img src="https://image.freepik.com/free-photo/restaurant-interior-with-empty-tables_1203-1070.jpg" alt="Restaurant Inside">
+    </div>
+    <div class="story-text">
+      <h2>Our Story</h2>
+      <p>Little Lemon is a family-owned restaurant dedicated to bringing you the best of Mediterranean cuisine.</p>
+      <p>From traditional Italian dishes to Greek and Turkish favorites, our menu is crafted with love and care.</p>
+      <img src="https://image.freepik.com/free-photo/chef-cooking-kitchen_1203-1068.jpg" alt="Chef" class="story-chef">
+    </div>
+  </div>
+</section>
+
+<section class="highlights">
+  <h2>Highlights</h2>
+  <div class="highlight-grid">
+    <div class="highlight">
+      <img src="https://image.freepik.com/free-photo/food-restaurant-menu_1203-1067.jpg" alt="Menu" class="highlight-image">
+      <h3>Seasonal Menu</h3>
+      <p>Our menu changes seasonally to ensure the freshest ingredients.</p>
+    </div>
+    <div class="highlight">
+      <img src="https://image.freepik.com/free-photo/restaurant-event_1203-1066.jpg" alt="Events" class="highlight-image">
+      <h3>Special Events</h3>
+      <p>Join us for themed nights and special events throughout the year.</p>
+    </div>
+    <div class="highlight">
+      <img src="https://image.freepik.com/free-photo/gift-card_1203-1065.jpg" alt="Gift" class="highlight-image">
+      <h3>Gift Cards</h3>
+      <p>Give the gift of Little Lemon with our customizable gift cards.</p>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <h2>What Our Customers Say</h2>
+  <div class="testimonial-carousel">
+    <div class="testimonial-slide">
+      <img src="https://image.freepik.com/free-photo/person-smiling_1203-1064.jpg" alt="Testimonial 1" class="testimonial-image">
+      <p>"Little Lemon is my go-to spot for authentic Mediterranean cuisine."</p>
+      <span>— John D.</span>
+    </div>
+    <div class="testimonial-slide">
+      <img src="https://image.freepik.com/free-photo/person-smiling_1203-1063.jpg" alt="Testimonial 2" class="testimonial-image">
+      <p>"The service is always top-notch, and the food is delicious."</p>
+      <span>— Emily K.</span>
+    </div>
+    <div class="testimonial-slide">
+      <img src="https://image.freepik.com/free-photo/person-smiling_1203-1062.jpg" alt="Testimonial 3" class="testimonial-image">
+      <p>"I love the cozy atmosphere and the variety of dishes."</p>
+      <span>— Michael T.</span>
+    </div>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Our Gallery</h2>
+  <div class="gallery-grid">
+    <img src="https://image.freepik.com/free-photo/restaurant-interior_1203-1061.jpg" alt="Gallery 1">
+    <img src="https://image.freepik.com/free-photo/restaurant-kitchen_1203-1060.jpg" alt="Gallery 2">
+    <img src="https://image.freepik.com/free-photo/food-restaurant_1203-1059.jpg" alt="Gallery 3">
+    <img src="https://image.freepik.com/free-photo/restaurant-table_1203-1058.jpg" alt="Gallery 4">
+    <img src="https://image.freepik.com/free-photo/restaurant-event_1203-1057.jpg" alt="Gallery 5">
+    <img src="https://image.freepik.com/free-photo/restaurant-menu_1203-1056.jpg" alt="Gallery 6">
+  </div>
+</section>
+{% endblock %}
+
